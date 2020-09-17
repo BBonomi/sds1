@@ -69,16 +69,16 @@ const Charts = () => {
                     <Chart 
                         options={{...pieOptions, labels: platformData?.labels}}
                         type="donut"
-                        series = {[platformData?.series]}
+                        series = {platformData?.series}
                         width = "350"
                     />                    
                     </div>
                     <div className="gender-chart">
                     <h2 className="chart-title">Gêneros</h2>
                     <Chart 
-                        options={{...pieOptions, labels:genderData?.labels}}
+                        options={{...pieOptions, labels: genderData?.labels}}
                         type="donut"
-                        series = {[genderData?.series]}
+                        series = {genderData?.series}
                         width = "350"
                     />                         
                     </div>
